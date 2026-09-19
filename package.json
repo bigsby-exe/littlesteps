@@ -1,0 +1,28 @@
+{
+  "name": "lauras-little-steps",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "APP_ENV=development node --watch src/server.js",
+    "test": "node --test test/*.test.js",
+    "test:browser": "node scripts/browser-test.js",
+    "backup": "node scripts/backup.js",
+    "format": "prettier --write src public test scripts README.md CONTEXT.md docs/product-design.md package.json compose.yaml",
+    "format:check": "prettier --check src public test scripts README.md CONTEXT.md docs/product-design.md package.json compose.yaml"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "openid-client": "^6.8.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@fontsource-variable/nunito": "^5.3.0",
+    "playwright": "^1.55.0",
+    "prettier": "^3.9.8"
+  }
+}

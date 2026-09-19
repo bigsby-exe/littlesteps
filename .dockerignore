@@ -1,0 +1,11 @@
+node_modules
+.git
+.agents
+.codex
+data
+backups
+artifacts
+.env
+.env.*
+test
+skills-lock.json
